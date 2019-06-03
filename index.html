@@ -180,6 +180,8 @@
   </template>
   <script type="text/javascript">
     var fireballSize = 22;
+    var wizardSpeed = 3;
+    var wizardWidth = 70;
     var getFireballSpeed = function (left) {
       if (true == left) { // проверяем выполняется ли условие
         return 5; // возвращаем скорость равную 5
@@ -187,8 +189,6 @@
         return 2; // возвращаем скорость равную 2
       }
     }
-    var wizardSpeed = 3;
-    var wizardWidth = 70;
     var calcWizardHeight = 1.337 * wizardWidth;
     var getWizardHeight = function (wizardWidth) {
       var calcWizardHeight = 1.337 * wizardWidth;
