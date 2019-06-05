@@ -184,18 +184,18 @@
     var wizardWidth = 70;
     var getFireballSpeed = function(left) {
 
-      if (true == left) { // проверяем выполняется ли условие
+      if (left) { // проверяем выполняется ли условие
         return 5; // возвращаем скорость равную 5
       } else {
         return 2; // возвращаем скорость равную 2
       }
     }
 
-    var getWizardHeight = function() {
-      return 1.337 * wizardWidth;
-    };
+    var getWizardHeight = function(wizardWidth) {
+      var calcWizardHeight = 1.337 * wizardWidth;
+      return calcWizardHeight;
+    }
 
-    var wizardHeight = getWizardHeight(wizardWidth);
     var getWizardX = function(width) {
       return width / 2;
     }
